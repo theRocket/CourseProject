@@ -1,11 +1,15 @@
-# BERT and ERNIE (ryanjr3)
+# Project BERT and ERNIE (ryanjr3)
+## CS 410 - Text Information Systems
+#### Masters in Computer Science at UIUC
 
-### Course project in CS 410 - Text Information Systems for Masters in Computer Science at University of Illinois Urbana-Champaign.
+The aim of my project is to become better acquainted with a state-of-the-art NLP model called BERT or [Bidirectional Encoder Representations from Transformers](https://en.wikipedia.org/wiki/BERT_(language_model)) which has two pre-trained models for the English language (work sponsored by Google).
 
-The aim of my project is to become better acquainted with a state-of-the-art NLP model called BERT or [Bidirectional Encoder Representations from Transformers](https://en.wikipedia.org/wiki/BERT_(language_model)) which has two pre-trained models for the English language (work sponsored by Google) coupled with state-of-the-art domain specific hardware for neural networks called TPUs (Tensor Processing Units) - including pods organized in 2-D toroidal mesh networks - available for general public use in Google Cloud infrastructure, optimized to run TensorFlow.
+I want to learn this model by test driving it on state-of-the-art domain specific hardware for neural networks called TPUs (Tensor Processing Units) - including pods organized in 2-D toroidal mesh networks - also by Google and available for general public use in their Cloud infrastructure.
+
+This infrastructure is optimized to run [TensorFlow](https://github.com/tensorflow/tensorflow) - "An Open Source Machine Learning Framework for Everyone") - developed by the [Google Brain Team](https://en.wikipedia.org/wiki/Google_Brain#Google_Translate).
 
 ## Options:
-1. [BERT](https://github.com/google-research/bert/) NLP model benchmarking on [Google Cloud TPU]()https://cloud.google.com/tpu.
+1. [BERT](https://github.com/google-research/bert/) NLP model benchmarking on [Google Cloud TPU](https://cloud.google.com/tpu).
 
 I could try to replicate results from options "available in cloud" (only Google) on [MLPerf](https://mlperf.org/training-results-0-6/) results [example](https://github.com/mlperf/training_results_v0.6/blob/master/Google/systems/tpu-v3-2048.json).
 
