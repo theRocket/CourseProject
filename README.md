@@ -1,5 +1,7 @@
 # BERT and ERNIE (ryanjr3)
 
+### Course project in CS 410 - Text Information Systems for Masters in Computer Science at University of Illinois Urbana-Champaign.
+
 The aim of my project is to become better acquainted with a state-of-the-art NLP model called BERT or [Bidirectional Encoder Representations from Transformers](https://en.wikipedia.org/wiki/BERT_(language_model)) which has two pre-trained models for the English language (work sponsored by Google) coupled with state-of-the-art domain specific hardware for neural networks called TPUs (Tensor Processing Units) - including pods organized in 2-D toroidal mesh networks - available for general public use in Google Cloud infrastructure, optimized to run TensorFlow.
 
 ## Options:
