@@ -12,4 +12,4 @@ I could try to replicate results from options "available in cloud" (only Google)
 
 Could I also run a NLP model like BERT on [PyTorch](https://github.com/pytorch/pytorch) using an AWS Deep Learning container?
 
-Could I run [Fairseq](https://github.com/pytorch/fairseq)?
+Could I run [Fairseq](https://github.com/pytorch/fairseq) on either architecture? "Facebook is releasing the data set, model, training and evaluation setups as open source to the research community to help spur on further advancements." (source: [Engadget](https://www.engadget.com/facebooks-ai-can-translate-languages-directly-into-one-another-150029679.html))
