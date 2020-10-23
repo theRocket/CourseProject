@@ -21,8 +21,8 @@ Amazon claims that:
 
 > AWS DL Containers include AWSoptimizations and improvements to the latest versions of popular frameworks, like TensorFlow, PyTorch, and Apache MXNet, and libraries to deliver the highest performance for training and inference in the cloud. For example, AWS TensorFlow optimizations allow models to train up to twice as fast through significantly improved GPU scaling.
 
-- Could I also run a NLP model like BERT on [PyTorch](https://github.com/pytorch/pytorch) using an AWS Deep Learning container?
-- Could I compare apples on AWS to apples on GCP for a comparitive benchmark on their GPU/TPU hardware?
+- Could I also run a NLP model like BERT on [PyTorch](https://github.com/pytorch/pytorch) using an [available AWS Deep Learning container](https://github.com/aws/deep-learning-containers/blob/master/available_images.md)?
+- Could I compare apples on AWS to apples on GCP for a comparitive benchmark on their GPU/TPU hardware in a reasonable time frame and for reasonable cost?
 
 #### 3) API automation:
 I could also attempt to automate some infrastructure setup for making other CS410 students' code run on [AWS Lambda using Python layers](https://towardsdatascience.com/introduction-to-amazon-lambda-layers-and-boto3-using-python3-39bd390add17). See also [Hosting your ML model on AWS Lambdas](https://towardsdatascience.com/hosting-your-ml-model-on-aws-lambdas-api-gateway-part-1-9052e6b63b25) (TowardsDataScience.com) that creates the following layers:
