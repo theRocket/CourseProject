@@ -17,7 +17,12 @@ If Option 1 is too expensive/too difficult/too easy, I could pivot or
 
 #### 2) combine/compare with [AWS Deep Learning Container](https://aws.amazon.com/machine-learning/containers/) infrastructure.
 
-I could also attempt to automate some infrastructure setup for making other CS410 students' code run on [AWS Lambda using Python layers](https://towardsdatascience.com/introduction-to-amazon-lambda-layers-and-boto3-using-python3-39bd390add17).
+I could also attempt to automate some infrastructure setup for making other CS410 students' code run on [AWS Lambda using Python layers](https://towardsdatascience.com/introduction-to-amazon-lambda-layers-and-boto3-using-python3-39bd390add17). See also [Hosting your ML model on AWS Lambdas](https://towardsdatascience.com/hosting-your-ml-model-on-aws-lambdas-api-gateway-part-1-9052e6b63b25) (TowardsDataScience.com) that creates the following layers:
+
+1. Numpy / scipy layer as we’ll need these packages for later layers (pre-built by AWS)
+2. Pandas layer to allow us to use the ColumnTransformer used in our model
+3. Sklearn layer to enable use of the scikit-learn library
+4. Model layer where our model will reside
 
 
 Could I also run a NLP model like BERT on [PyTorch](https://github.com/pytorch/pytorch) using an AWS Deep Learning container?
