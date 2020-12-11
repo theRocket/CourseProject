@@ -25,7 +25,11 @@ Amazon claims that:
 - Could I compare apples on AWS to apples on GCP for a comparitive benchmark on their GPU/TPU hardware in a reasonable time frame and for reasonable cost?
 
 #### 3) API automation:
-I could also attempt to automate some infrastructure setup for making other CS410 students' code run on [AWS Lambda using Python layers](https://towardsdatascience.com/introduction-to-amazon-lambda-layers-and-boto3-using-python3-39bd390add17). See also [Hosting your ML model on AWS Lambdas](https://towardsdatascience.com/hosting-your-ml-model-on-aws-lambdas-api-gateway-part-1-9052e6b63b25) (TowardsDataScience.com) that creates the following layers:
+I could also attempt to automate some infrastructure setup for making other CS410 students' code run on [AWS Lambda using Python layers](https://towardsdatascience.com/introduction-to-amazon-lambda-layers-and-boto3-using-python3-39bd390add17). See also:
+
+##### [Hosting your ML model on AWS Lambdas](https://towardsdatascience.com/hosting-your-ml-model-on-aws-lambdas-api-gateway-part-1-9052e6b63b25) (TowardsDataScience.com).
+
+ This creates the following layers:
 
 1. Numpy / scipy layer as we’ll need these packages for later layers (pre-built by AWS)
 2. Pandas layer to allow us to use the ColumnTransformer used in our model
