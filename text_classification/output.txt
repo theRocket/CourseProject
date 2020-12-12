@@ -1,0 +1,12 @@
+text_classification git:(main) ✗ python fasttext_word_ngram.py --input data/yelp_review_polarity.train \
+                                --output data/yelp_review_polarity.gluon \
+                                --validation data/yelp_review_polarity.test \
+                                --ngrams 1 --epochs 10 --lr 0.1 --emsize 100 --gpu 0
+INFO:root:Ngrams range for the training run : 1
+INFO:root:Loading Training data
+INFO:root:Opening file data/yelp_review_polarity.train for reading input
+INFO:root:Loading Test data
+INFO:root:Opening file data/yelp_review_polarity.test for reading input
+INFO:root:Vocabulary size: 464402
+INFO:root:Training data converting to sequences...
+INFO:root:Done! Sequence conversion Time=61.76s, #Sentences=560000
