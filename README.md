@@ -50,8 +50,12 @@ The primary influence for this project was an entry hosted at nlp.gluon.ai for [
 
 In this project, I begin by training the model on AWS using the Yelp Sentiment (binary classification) data to establish a workflow. Once the architecture is in place and proven to achieve timely results, we can expand into the other datasets. Each are manually uploaded to S3 buckets to make them accessible to our Sagemaker instance, rather than using the script provided by fastText (although we do use their [text normalization function](./text_classification/data_fetch.sh)).
 #### Output from AWS Sagemaker:
-- [Jupyter notebook run 1](main_run1_adam.md) with `adam` as optimizer.
-- [Jupyter notebook run 2](main_run2_sgd.md) with `sgd` as optimizer.
+[Jupyter notebook run 1](main_run1_adam.md) with `adam` as optimizer, 10 Epochs
+-- Final Test Accuracy: 0.939921052631579, Test Loss: 0.17803387705344548
+-- Highest Test Accuracy: 0.9401578947368421 (Epoch 8)
+[Jupyter notebook run 2](main_run2_sgd.md) with `sgd` as optimizer, 10 Epochs
+-- Final Test Accuracy: 0.9400526315789474, Test Loss: 0.17815197125596924
+-- Highest Test Accuracy: 0.9403157894736842 (Epoch 8)
 
 #### Other Resources:
 
