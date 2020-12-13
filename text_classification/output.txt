@@ -1,7 +1,7 @@
-text_classification git:(main) ✗ python fasttext_word_ngram.py --input data/yelp_review_polarity.train \
+ text_classification git:(main) ✗ python fasttext_word_ngram.py --input data/yelp_review_polarity.train \
                                 --output data/yelp_review_polarity.gluon \
                                 --validation data/yelp_review_polarity.test \
-                                --ngrams 1 --epochs 10 --lr 0.1 --emsize 100 --gpu 0
+                                --ngrams 1 --epochs 10 --lr 0.1 --emsize 100        
 INFO:root:Ngrams range for the training run : 1
 INFO:root:Loading Training data
 INFO:root:Opening file data/yelp_review_polarity.train for reading input
@@ -9,4 +9,22 @@ INFO:root:Loading Test data
 INFO:root:Opening file data/yelp_review_polarity.test for reading input
 INFO:root:Vocabulary size: 464402
 INFO:root:Training data converting to sequences...
-INFO:root:Done! Sequence conversion Time=61.76s, #Sentences=560000
+INFO:root:Done! Sequence conversion Time=61.68s, #Sentences=560000
+INFO:root:Done! Sequence conversion Time=17.32s, #Sentences=38000
+INFO:root:Encoding labels
+INFO:root:Label mapping:{'__label__1': 0, '__label__2': 1}
+INFO:root:Done! Preprocessing Time=30.90s, #Sentences=560000
+INFO:root:Done! Preprocessing Time=0.59s, #Sentences=38000
+INFO:root:Number of labels: 2
+INFO:root:Initializing network
+INFO:root:Running Training on ctx:cpu(0)
+INFO:root:Embedding Matrix Length:464402
+INFO:root:Number of output units in the last layer :1
+INFO:root:Network initialized
+INFO:root:Changing the loss function to sigmoid since its Binary Classification
+INFO:root:Loss function for training:SigmoidBinaryCrossEntropyLoss(batch_axis=0, w=None)
+INFO:root:Starting Training!
+INFO:root:Training on 560000 samples and testing on 38000 samples
+INFO:root:Number of batches for each epoch : 35000.0, Display cadence: 3500
+INFO:root:Epoch : 0, Batches complete :0
+INFO:root:Epoch : 0, Batches complete :3500
