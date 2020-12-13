@@ -40,7 +40,7 @@ import mxnet.gluon as gluon
 
 import gluonnlp
 from smart_open import open
-# from sagemaker.s3 import S3Downloader
+from sagemaker.s3 import S3Uploader
 
 gluonnlp.utils.check_version('0.7.1')
 
@@ -231,7 +231,9 @@ def get_label_mapping(train_labels):
 
 def save_model(net, output_file):
     """This method saves the model to file"""
-    net.save_parameters(output_file)
+    file_name = "net.params" # local version
+    net.save_parameters(file_name)
+    S3Uploader.upload(file_name,output_file)
 
 
 def get_context(args):

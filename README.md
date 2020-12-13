@@ -61,6 +61,7 @@ In this project, I begin by training the model on AWS using the Yelp Sentiment (
 [Jupyter notebook run 3](text_classification/result/main_run3_sgd.md) with `sgd` as optimizer, 25 Epochs
 - Highest Test Accuracy: 0.9403157894736842 (Epoch 8)
 - Final Test Accuracy: 0.9397105263157894, Test Loss: 0.17758843273002864 (Epoch 25)
+- Note, the accuracy above was reached at Epoch 18 and remained stable.
 
 #### Other Resources:
 
