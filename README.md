@@ -5,7 +5,7 @@
 [Gluon NLP with MXNet on AWS Sagemaker](FinalProjectReport.pdf)
 
 #### The project formerly known as BERT benchmarking on Google Cloud TPUs
-Please see the [October README commit](https://github.com/theRocket/CourseProject/tree/473ee84ac60d8f5a5368f94a84c49d99e2189d9c) for the original project proposal. Training times and cloud compute costs for this model were discovered to be prohibitive.
+Please see the [October README commit](https://github.com/theRocket/CourseProject/tree/473ee84ac60d8f5a5368f94a84c49d99e2189d9c) for the original project proposal. Training times and cloud compute costs for this model were discovered to be too prohibitive for our project timeline and resources.
 #### Gluon for NLP and MXNet
 
 The aim of my project is to become better acquainted with the [Gluon API for Natural Language Processing](nlp.gluon.ai) (NLP).
