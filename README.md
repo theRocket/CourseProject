@@ -1,8 +1,8 @@
 # Training FastText "Bag of Tricks" using Gluon & MXNet on AWS GPUs (ryanjr3)
-## CS 410 - Text Information Systems (MS-CS at UIUC)
+## CS 410 - Text Information Systems (MCS-DS at UIUC)
 
 #### The project formerly known as BERT benchmarking on Google Cloud TPUs
-Please see the [October README commit](https://github.com/theRocket/CourseProject/tree/473ee84ac60d8f5a5368f94a84c49d99e2189d9c) for the original project proposal.
+Please see the [October README commit](https://github.com/theRocket/CourseProject/tree/473ee84ac60d8f5a5368f94a84c49d99e2189d9c) for the original project proposal. Training times and cloud compute costs for this model were discovered to be prohibitive.
 #### Gluon for NLP and MXNet
 
 The aim of my project is to become better acquainted with the [Gluon API for Natural Language Processing](nlp.gluon.ai) (NLP).
@@ -31,7 +31,7 @@ The Amazon Web Services (AWS) Sagemaker instances support MXNet running on Pytho
 !pip install gluonnlp
 ```
 
-#### AWS Sagemaker DL on NVIDIA GPUs
+#### AWS Sagemaker DL performance on NVIDIA GPUs
 I plan to implement the training job using high-end [P3 AWS Sagemaker instances](https://aws.amazon.com/ec2/instance-types/p3/) to benchmark rapid training of models using python v3.6. According to the table of instance sizes listed at the bottom of the above linked page, the cheapest instance offered - `p3.2xlarge` - provides 1 Tesla V100 GPU with 16GB of GPU memory for $3.07/hr on demand.
 
 We have [published benchmarks of NVIDIA GPUs](https://www.microway.com/knowledge-center-articles/comparison-of-nvidia-geforce-gpus-and-nvidia-tesla-gpus/) provided in TensorFLOPs, which are units of floating-point arithmetic performance aimed at NVIDIA GPU hardware called Tensor Cores:
@@ -50,7 +50,8 @@ The primary influence for this project was an entry hosted at nlp.gluon.ai for [
 
 In this project, I begin by training the model on AWS using the Yelp Sentiment (binary classification) data to establish a workflow. Once the architecture is in place and proven to achieve timely results, we can expand into the other datasets. Each are manually uploaded to S3 buckets to make them accessible to our Sagemaker instance, rather than using the script provided by fastText (although we do use their [text normalization function](./text_classification/data_fetch.sh)).
 #### Output from AWS Sagemaker:
-See the [Jupyter notebook](main.md)
+- [Jupyter notebook run 1](main_run1_adam.md) with `adam` as optimizer.
+- [Jupyter notebook run 2](main_run2_sgd.md) with `sgd` as optimizer.
 
 #### Other Resources:
 
