@@ -1,5 +1,8 @@
 # Training FastText "Bag of Tricks" using Gluon & MXNet on AWS GPUs (ryanjr3)
 ## CS 410 - Text Information Systems (MS-CS at UIUC)
+
+#### The project formerly known as BERT benchmarking on Google Cloud TPUs
+Please see the [October README commit](https://github.com/theRocket/CourseProject/tree/473ee84ac60d8f5a5368f94a84c49d99e2189d9c) for the original project proposal.
 #### Gluon for NLP and MXNet
 
 The aim of my project is to become better acquainted with the [Gluon API for Natural Language Processing](nlp.gluon.ai) (NLP).
@@ -21,7 +24,9 @@ def cos_similarity(embedding, word1, word2):
 print('Similarity between "baby" and "infant": ', cos_similarity(glove, 'baby', 'infant').asnumpy()[0])
 ```
 
-The Gluon API provides user-friendly access to the Apache MXNet library for Deep Learning, which advertises itself as being a "truly open source deep learning framework suited for flexible research prototyping and production." A MXNet enabled runtime on Python 3.6 on Amazon Web Services (AWS) Sagemaker instances is also well-supported with `conda_mxnet_p36` selected for the Jupyter Notebook. Gluon NLP dependencies are easily added to the notebook by running a cell with:
+The Gluon API provides user-friendly access to the Apache MXNet library for Deep Learning, which advertises itself as being a "truly open source deep learning framework suited for flexible research prototyping and production."
+
+The Amazon Web Services (AWS) Sagemaker instances support MXNet running on Python 3.6 with the `conda_mxnet_p36` kernel selected for the Jupyter Notebook. Gluon NLP dependencies are easily added to the notebook by running a cell with:
 ```
 !pip install gluonnlp
 ```
